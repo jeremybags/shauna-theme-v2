@@ -2073,9 +2073,9 @@ ul#sitemap-posts ul {
 		border-bottom: 0;
 	}
 	
-	.navbar b.caret {
+	/*.navbar b.caret {
 		display: none;
-	}
+	}*/
 	
 	.navbar .nav-menu > li a {
 		padding: 10px 15px;
