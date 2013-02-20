@@ -1,0 +1,264 @@
+/*  
+Theme Name: Standard Child Theme Kit
+Theme URI: https://github.com/eightbit/standard-child-theme-kit
+Version: 3.0.3
+Description: This is a "getting started" child theme kit for Standard 3.
+Author: 8BIT
+Author URI: http://8bit.io
+Author Email: sales@8bit.io
+License: GNU General Public License v3.0 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: standard
+*/
+
+
+/* Import Standard Styles
+---------------------------------------------------------------------------------- */
+
+@import url( '../standard/style.css' );
+
+/* uncomment the line below to enable child theme right-to-left language support */
+/* @import url( '../standard/rtl.css' ); */
+
+
+/* Customizations
+---------------------------------------------------------------------------------- */
+
+Body {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.entry-content img {
+	 -webkit-box-shadow: 1px 1px 4px #999999;
+  	-moz-box-shadow: 1px 1px 4px #999999;
+  	box-shadow: 1px 1px 4px #999999;
+    border: 3px solid #FFFFFF;
+    border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+#head-wrapper {
+	margin-bottom: -100px;
+}
+
+#hgroup {
+	padding: 12px 0px 28px;
+}
+
+#wrapper {
+	padding: 20px 0 40px;
+}
+
+p {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+input, button, select, textarea {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar .nav > li > a {
+	font-size: 17px;
+	letter-spacing: -1px;
+}
+
+a {
+	/*color: #ed8c01;*/
+	color: #f8b522;
+}
+
+a:hover {
+	/*color: #ed8c01;*/
+	color: #f8b522;
+}
+
+/*.menu-header-container {
+width: 940px;
+}
+
+#menu-under-header {
+	width: 940px;
+	margin: auto auto;
+}*/
+
+/* background */
+#menu-under-header .navbar-inner,
+.navbar .fill {
+	background-color: transparent; 
+	background-image: none;
+        filter: none;
+}
+
+/* shadow */
+#menu-under-header .navbar-inner { 
+	-webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        text-shadow: none;
+}
+
+/* active menu items */
+#menu-under-header.navbar .nav .active > a, 
+#menu-under-header.navbar .nav .active > a:hover {
+    background-color: #ABCDEF;
+    color: #FF0000;
+}
+
+/* text */
+#menu-under-header.navbar .nav > li > a {
+	
+	font-size: 15px;
+	color: #444444;
+	text-shadow: #fff 1px 1px;
+}
+
+/* text hover */
+#menu-under-header.navbar .nav > li >` a:hover {
+	color: #999;
+}
+
+#menu-under-header .btn {
+	color: #ffffff;
+	padding: 0px 0px 0px;
+/*	margin: 5px 5px 0 49px;*/
+	margin: 5px;
+	background-color: none;
+	background: url('images/bg-texture-menu.png');
+
+/*  background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -ms-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f5f5f5));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -o-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: linear-gradient(top, #ffffff, #f5f5f5);*/
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f5f5', GradientType=0);
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0px 10px #ddd;
+  -moz-box-shadow: inset 0 0px 10px #ddd;
+  box-shadow: inset 0 0px 10px #ddd;
+		/*background-color: #202020;*/
+	/*background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(231, 231, 231)), to(rgb(215, 215, 215)));
+	background-image: -webkit-linear-gradient(top, rgb(231, 231, 231), rgb(215, 215, 215));
+	background-image: -moz-linear-gradient(top, rgb(231, 231, 231), rgb(215, 215, 215));
+	background-image: -o-linear-gradient(top, rgb(231, 231, 231), rgb(215, 215, 215));
+	background-image: -ms-linear-gradient(top, rgb(231, 231, 231), rgb(215, 215, 215));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#dedede', EndColorStr='#c8c8c8');*/
+}
+
+#menu-under-header 
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  color: #dedede;
+  background-color: #c8c8c8;
+  *background-color: #dedede;
+}
+
+.navbar .nav > li > a {
+	text-shadow: none;
+}
+
+.breadcrumb {
+		color: #444444;
+	background-color: none;
+	background: url('images/bg-texture-menu.png');
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f5f5', GradientType=0);
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0px 10px #ddd;
+  -moz-box-shadow: inset 0 0px 10px #ddd;
+  box-shadow: inset 0 0px 10px #ddd;
+}
+
+.jetpack_subscription_widget {
+	background: #fff;
+	margin: 0 0 20px 0;
+	position: relative;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
+	-moz-box-shadow: inset	0 1px 2px 0 rgba(0, 0, 0, 0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2),transparent 0 0 0,transparent 0 0 0,transparent 0 0 0,transparent 0 0 0;
+	-webkit-box-sizing: border-box;	
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box;      
+}
+
+.jetpack_subscription_widget label {
+font-size: 32px;
+line-height: 1.2;
+font-weight: bold;
+}
+
+/*.navbar .nav > li > a {
+	text-shadow: none;
+}
+
+.navbar-inner .btn, .navbar .btn-group > li > a { 
+	padding: 0px 0px 0px;
+	font-size: 16px;
+	margin-top: 0px;
+}*/
+
+/* Media Queries
+---------------------------------------------------------------------------------- */
+
+/* Smartphones */
+@media (max-width: 480px) {
+
+}
+
+/* Tablet & Mobile */
+@media (max-width: 979px) {	
+	.navbar ul.nav-menu {
+		border-top: none;
+		margin-top: 32px;
+		padding-top: 10px;
+}	
+}
+
+/* Mobile to Tablet */
+@media only screen and (max-width: 767px) {
+
+}
+
+
+/* Landscape Tablets */
+@media (min-width: 768px) and (max-width: 979px) {
+	#head-wrapper {
+		margin-bottom: -323px;
+}
+	#sidebar {
+		margin-top: 246px;
+	}
+	#hgroup {
+		padding: 0px 0px 0px;
+}
+	#header-widget {
+		margin-top: 0px;
+	}
+	#hgroup {
+		padding: 0px 0px 28px;
+}
+	.navbar ul.nav-menu {
+		border-top: none;
+		margin-top: 32px;
+		padding-top: 10px;
+}
+}
+/* Desktop */
+@media (min-width: 980px) {
+	
+}
+
